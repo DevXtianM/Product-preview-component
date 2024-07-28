@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop View](https://github.com/DevXtianM/Product-preview-component/blob/main/screenshot/Desktop-view.png)
-![Mobile View](https://github.com/DevXtianM/Product-preview-component/blob/main/screenshot/mobile-view.png)
+![Desktop View](https://github.com/DevXtianM/Product-preview-component/blob/main/screenshot/Desktop_view.png)
+![Mobile View](https://github.com/DevXtianM/Product-preview-component/blob/main/screenshot/mobile_view.png)
 
 ### Links
 - Solution URL: https://github.com/DevXtianM/Product-preview-component
