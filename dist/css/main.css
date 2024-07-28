@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:wght@100..900&display=swap");
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+body {
+  height: 100%;
+}
+
+article {
+  height: 100vh;
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(30, 38%, 92%);
+}
+article figure {
+  margin: 0 1rem;
+  border-radius: 10px 10px 10px 10px;
+  background-color: hsl(0, 0%, 100%);
+}
+article figure picture {
+  min-width: 300px;
+}
+article figure picture .product-img {
+  border-radius: 10px 10px 0 0;
+}
+article figcaption {
+  margin: 0 1.5rem;
+}
+article figcaption h5 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  color: hsl(228, 12%, 48%);
+  padding-top: 1.25rem;
+}
+article figcaption h1 {
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  line-height: 1;
+  padding-top: 0.875rem;
+}
+article figcaption p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+  font-size: 0.875rem;
+  padding: 0.875rem 0;
+}
+article .price-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+article .price-container .price {
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: hsl(158, 36%, 37%);
+}
+article .price-container .prev-price {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 0.725rem;
+  text-decoration-line: line-through;
+  color: hsl(228, 12%, 48%);
+}
+article .price-container button {
+  border: none;
+  background-color: hsl(158, 36%, 37%);
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  padding: 0.72rem 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.725rem;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+article .price-container button:hover {
+  background-color: #1a4031;
+  cursor: pointer;
+}
+article .price-container button:focus {
+  background-color: #1a4031;
+  cursor: pointer;
+}
+article .price-container button span::before {
+  content: url("/images/icon-cart.svg");
+  margin-right: 0.725rem;
+  position: relative;
+  top: 2px;
+  left: -2px;
+}
+
+@media (min-width: 375px) {
+  body {
+    background-color: hsl(30, 38%, 92%);
+    height: 100%;
+  }
+  article {
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  figure {
+    display: flex;
+    flex-direction: row;
+    max-height: 450px;
+    min-width: 600px;
+    max-width: 600px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px 10px 0 0;
+  }
+  figure picture {
+    position: relative;
+    overflow: hidden;
+    min-width: 300px;
+  }
+  figure picture img {
+    min-height: 450px;
+    border-radius: 10px 0 0 10px !important;
+  }
+  figure figcaption {
+    margin: 1.25rem 2rem;
+  }
+  figure figcaption h5 {
+    padding-top: 0.875rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+  }
+  figure figcaption h1 {
+    padding-top: 0.875rem;
+    font-family: "Fraunces", serif;
+    line-height: 1;
+    font-size: 2.15rem;
+  }
+  figure figcaption p {
+    margin-top: 0.875rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    font-size: 0.9rem;
+  }
+  figure figcaption .price-container {
+    display: flex;
+    margin: 0.5rem 0;
+    align-items: center;
+    align-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  figure figcaption .price-container .price {
+    font-family: "Fraunces", serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: hsl(158, 36%, 37%);
+  }
+  figure figcaption .price-container .prev-price {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    font-size: 0.725rem;
+    text-decoration-line: line-through;
+  }
+  figure figcaption .price-container button {
+    border: none;
+    background-color: hsl(158, 36%, 37%);
+    width: 100%;
+    border-radius: 10px;
+    padding: 0.72rem 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.725rem;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  figure figcaption .price-container button span::before {
+    content: url("/images/icon-cart.svg");
+    margin-right: 0.725rem;
+  }
+}/*# sourceMappingURL=main.css.map */
